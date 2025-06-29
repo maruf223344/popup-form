@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popup form</title>
+    
+</head>
+<body>
+  
+   <form onsubmit="validatecheckbox()">
+    <label > Name:</label>
+    <input type="text"  id="uname"><br><br>
+    <label >password:</label>
+    <input type="password"  id="agree">  <br><br>
+     <label >E-mail:</label>
+    <input type="text"  id="mail">  <br><br>
+      <label >phon number:</label>
+    <input type="number"  id="num">  <br><br>
+      <label >house number:</label>
+    <input type="number"  id="house">  <br><br>
+    <input type="checkbox" name="" id="checkbox">
+    <input type="submit" value="submit">
+   </form>
+   <script>
+        function validatecheckbox(){
+            var a = document.getElementById('uname').value;
+            var b = document.getElementById('agree').value;
+            var c = document.getElementById('checkbox');
+            var d = document.getElementById('mail').value;
+            var e = document.getElementById('num').value;
+             var f = document.getElementById('house').value;
+            if(a =="" || b =="" || !c.checked){
+                alert('Fill up All Fields with Checkbox');
+            }else{
+                window.alert("Form Submited")
+            }
+        }
+
+    </script>
+
+
+</body>
+</html>
